@@ -1,0 +1,1 @@
+this repo contains a basic template for user authentication in Node.js using the passport middleware

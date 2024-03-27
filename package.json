@@ -2,9 +2,11 @@
   "name": "passport-auth-basics",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.pug",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "devstart": "nodemon app.js --ext pug",
+    "serverstart": "DEBUG=passport-auth-basics:* npm run devstart"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,7 @@
     "express": "^4.19.2",
     "express-session": "^1.18.0",
     "mongoose": "^8.2.3",
+    "nodemon": "^3.1.0",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",
     "pug": "^3.0.2"

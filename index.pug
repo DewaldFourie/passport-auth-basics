@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title
+  body
+    if user
+      h1 WELCOME BACK #{user.username}
+      p The current user is #{currentUser.username}
+      a(href="/log-out") LOG OUT
+    else
+      h1 please log in
+      form(action="/log-in", method="POST")
+        label(for="username") Username
+        input(name="username", placeholder="username", type="text")
+        label(for="password") Password
+        input(name="password", type="password")
+        button(type="submit") Log In
+      br
+      p No Account ?  
+      a(href="/sign-up") Sign Up Here!  
+
